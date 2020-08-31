@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap');
+
+            /**     font-family: 'Roboto', sans-serif;        **/ 
+            /**     font-family: 'Poppins', sans-serif;       **/
+            /**     font-family: 'Staatliches', cursive;      **/
+            /**     font-family: 'Cairo', sans-serif;         **/
+
+    /** CSS Root **/
+        :root{
+            --preSET: #222326;
+            --packOrg: #f59b23;
+            --blue: #007bff;
+            --indigo: #6610f2;
+            --purple: #6f42c1;
+            --pink: #e83e8c;
+            --red: #dc3545;
+            --orange: #fd7e14;
+            --yellow: #ffc107;
+            --green: #28a745;
+            --teal: #20c997;
+            --cyan: #17a2b8;
+            --white: #fff;
+            --gray: #6c757d;
+            --gray-dark: #343a40;
+            --primary: #007bff;
+            --secondary: #6c757d;
+            --success: #28a745;
+            --info: #17a2b8;
+            --warning: #ffc107;
+            --danger: #dc3545;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --deepONE: font-family: 'Poppins', sans-serif;
+            --arONE: font-family: 'Cairo', sans-serif;
+            --faNtastiONE:font-family: 'Staatliches', cursive;
+        }        
+    /** end of the root **/     
+
+            *{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+            }
+
+ body{
+     font-family: var(--deepONE);
+ }
+ .topnav{
+     width: 100%;
+     background: #222326;
+     padding: 20px;
+     text-align: center;
+     text-decoration: none;
+     text-transform: capitalize;
+     display: flex;
+     justify-content: space-evenly;
+ }
+ .topnav h2{
+     color: white;
+     font-family: var(--deepONE);
+     font-weight: 500;
+     text-decoration: none;
+     text-transform: uppercase;
+     font-size: 18px;
+     cursor: pointer;
+ }
+ .sign a{
+     color: var(--light);
+     text-decoration: none;
+     text-transform: capitalize;
+     font-weight: 500;
+     margin: 15px;
+     border: solid 1px var(--danger);
+     border-radius: 5px;
+     background-color: var(--danger);
+     padding: 6px 15px;
+ }
+ .sign a:hover{
+     color: var(--danger);
+     background-color: aliceblue;
+     border-color: aliceblue;
+     transition: 1s;
+ }
+ .search-block-1{
+     width: 100%;
+     height: 350px;
+     background-attachment: fixed;
+     background-image:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("../image/background/elvis-presley.jpg");
+     background-size: cover;
+     background-position: bottom;
+ }
+ .sb input[type=text] {
+    position: relative;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,150%);
+    padding: 6px;
+    border: none;
+    border-bottom: solid 4px var(--danger);
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--light);
+    background: rgba(0,0,0,0.3);
+    width: 50%;
+    height: 75px;
+  }
+  ::placeholder{
+      color: var(--light);
+      font-weight: 700;
+      text-transform: capitalize;
+  }
+  .ADS{
+      margin: 20px;
+  }
+  .title-1{
+      margin: 20px;
+      text-align: center;
+      width: 30%;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+  }
+  .title-1 h1{
+      text-align: center;
+      text-decoration: none;
+      text-transform: capitalize;
+      font-family: 'Staatliches', cursive;
+      font-size: 23px;
+      font-weight: 500;
+  }
+  .border{
+      height: 3px;
+      background-color: var(--danger);
+  }
+  .raw{
+      margin: 30px;
+  }
+  .column{
+      display: flex;
+      justify-content: space-around;
+      margin: 30px;
+  }
+  .card{
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2);
+    transition: 700ms;
+  }
+  .card:hover{
+      cursor: pointer;
+      transform: translateX(5);
+  }
+  .card p{
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif; 
+      text-align: center;
+      padding-top: 10px;
+  }
+  .stream-btn{
+      text-align: center;
+      padding-bottom: 10px;
+  }
+  .stream-btn a button{
+      border: none;
+      border: solid 2px var(--danger);
+      background-color: var(--danger);
+      padding: 5px;
+      border-radius: 3px;
+      width: 70%;
+      color: aliceblue;
+      text-align: center;
+      text-transform: capitalize;
+  }
+  .img img{
+      width: 246px;
+      height: 246px;
+  }
+  .news-title{
+      margin-bottom: 40px;
+      width: 70%;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      height: 100px;
+      box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+      background-image:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url("../image/background/mobile-musique.jpeg");
+      background-size: cover;
+  }
+  .news-title h2{
+      text-align: center;
+      text-decoration: none;
+      text-transform: capitalize;
+      position: relative;
+      top: 30%;
+      color: var(--light);
+      font-family: 'Staatliches', cursive; 
+      font-size: 30;
+  }
+  .interface{
+      width: 70%;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      height: 200px;
+      display: flex;
+      margin-bottom: 20px;
+      padding: 20px;
+      /*background-color: aqua;*/
+  }
+  .img-news{
+      width: 25%;
+      background: url("../image/background/Kanye-West.jpg");
+      background-size: cover;
+  }
+  .img-news-1{
+    width: 25%;
+    background: url("../image/background/Billie.jpg");
+    background-size: cover;
+  }
+  .img-news-2{
+    width: 25%;
+    background: url("../image/background/cardib-nigeriane.jpg");
+    background-size: cover;
+  }
+  .img-news-3{
+    width: 25%;
+    background: url("../image/background/Rihanna.jpg");
+    background-size: cover;
+  }
+  .img-news-4{
+    width: 25%;
+    background: url("../image/background/Ariana-Grande.jpg");
+    background-size: cover;
+  }
+  .newsletter{
+      cursor: pointer;
+  }
+  .newsletter a button{
+      border: none;
+      border: 2px var(--danger) solid;
+      background-color: var(--danger);
+      border-radius: 5px;
+      font-family: 'Staatliches', cursive;     
+      color: aliceblue;
+      padding: 5px;
+      position: relative;
+      left: 50%;
+      transform: translate(50%);
+      cursor: pointer;
+  }
+  .article-title , .article{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18;
+    text-align: center;
+    position: relative;
+    top: -15%;
+
+  }
+  .news{
+      width: 70%;
+  }
+  .border-2{
+    height: 3px;
+    background-color: var(--danger);
+    width: 60%;
+    position: relative;
+    left: 20%;
+  }
+  .contact-form{
+      width: 70%;
+      position: relative;
+      left: 50%;
+      transform: translate(-50%);
+      display: flex;
+      margin-bottom: 40px;
+  }
+  .send-form textarea{
+      background-color: rgba(235, 235, 235, 0.863);
+      border: none;
+      border: 2px solid var(--danger);
+      margin-right: 20px;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      border-radius: 5px;  
+      padding: 10px;
+      font-weight: 400;
+  }
+  .border-3{
+      height: 220px;
+      width: 2px;
+      background-color: var(--danger);
+  }
+  .btn-send a button{
+      width: 97%;
+      text-align: center;
+      font-family: 'Staatliches', cursive; 
+      border: none;
+      background-color: var(--danger);
+      border: 2px solid var(--danger); 
+      color: aliceblue;
+      border-radius: 5px;
+      height: 30px;
+  }
+    ::placeholder{
+        font-weight: 400;
+        color: var(--preSET);
+    }
+  .pros{
+      margin-left: 20px;
+      margin-top: 20px;
+      font-family: 'Staatliches', cursive;
+      text-transform: capitalize;
+  }
+
+  @media screen and (max-width: 1200){
+      body{
+          display: none;
+      }
+  }
+
+
+
+
+
